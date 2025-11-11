@@ -122,3 +122,57 @@ a{
     display: flex;
     gap: 1rem;
 }
+
+.categorias-section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.categorias-card{
+    position: relative;
+    width: 317px;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.categorias-nome{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+}
+
+.casual{
+    background: url(./images/casual.jpg);
+    background-size: cover;
+}
+
+.esporte{
+    background: url(./images/esporte.jpg);
+    background-size: cover;
+}
+
+.moderno{
+    background: url(./images/moderno.jpg);
+    background-size: cover;
+}
+
+.futurista{
+    background: url(./images/futurista.jpg);
+    background-size: cover;
+}
