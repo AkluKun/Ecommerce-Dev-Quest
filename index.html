@@ -5,34 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ecommerce Dev Quest</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsivo.css">
   </head>
 
   <body>
+   
     <header class="header">
-    <h1 class="logo">
-        <a href="/" title="Ecommerce Dev Quest">
-         <img src="/css/images/logo.svg" alt="logo" height="48px">
-        </a>
-    </h1>
-        <nav class="nav-center" aria-label="Categorias principais">
-          <ul>
-            <li><a href="#Masculino">Masculino</a></li>
-            <li><a href="#">Feminino</a></li>
-            <li><a href="#">Outlet</a></li>
-          </ul>
-        </nav>
+			<!-- Logo e navegação -->
+			<h1 class="logo">
+				<a href="/" title="SyntaxWear - Tênis e Sneakers Online">
+					<img src="./css/images/logo.svg" alt="SyntaxWear - Tênis e Sneakers Online">
+				</a>
+			</h1>
 
-        <nav class="nav-right" aria-label="Acesso rapido">
-          <ul>
-            <li><a href="#">Nossas Lojas</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#"><img src="/css/images/user.svg" alt="User"></a></li>
-            <li><a href="#"><img src="/css/images/help.svg" alt="ajuda"></a></li>
-            <li><a href="#"><img src="/css/images/bag.svg" alt="carrinho"></a></li>
-          </ul>
+			<input type="checkbox" class="menu-toggle" id="menu-toggle">
+			<label for="menu-toggle" class="menu-icon">
+				<img src="./css/images/hamburguer.svg" alt="menu mobile" srcset="">
+			</label>
 
-        </nav>
-    </header>
+			<nav class="nav-container">
+				<nav class="nav-center" aria-label="Categorias Principais">
+					<ul>
+						<li><a href="#">Masculino</a></li>
+						<li><a href="#">Feminino</a></li>
+						<li><a href="#">Outlet</a></li>
+					</ul>
+				</nav>
+
+				<nav class="nav-right" aria-label="Acesso rápido">
+					<ul>
+						<li><a href="#">Nossas lojas</a></li>
+						<li><a href="#">Sobre</a></li>
+						<li>
+							<a href="#" aria-label="Minha conta">
+								<img src="./css/images/user.svg" alt="Minha conta">
+							</a>
+						</li>
+						<li>
+							<a href="#" aria-label="Ajuda">
+								<img src="./css/images/help.svg" alt="Ajuda">
+							</a>
+						</li>
+						<li>
+							<a href="#" aria-label="Carrinho">
+								<img src="./css/images/bag.svg" alt="Carrinho">
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</nav>
+		</header>
 
     <main>
       <section class="hero-section">
@@ -79,7 +101,7 @@
           </div>
       </section>
 
-      <section class="grid-section">[
+      <section class="grid-section">
         <div class="card top1">
           <div class="top1-content">
             <h3 class="card-title">Krypton One</h3>
